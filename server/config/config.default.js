@@ -25,11 +25,11 @@ module.exports = appInfo => {
   //production
   config.sequelize = {
     dialect: 'mysql',
-    host: 'rm-bp1z1m53dml27zbh9.mysql.rds.aliyuncs.com',
-    database: 'weiailianquan',
+    host: 'xxx',
+    database: 'xxx',
     port: 3306,
-    username: 'jeff',
-    password: '@yufi1133571307@',
+    username: 'xxx',
+    password: 'xxxx',
 
     define: {
       freezeTableName: true,
@@ -140,16 +140,6 @@ exports.io = {
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
-      api_user:'TIk=ad=9',
-      api_password:'B0BCAB4E-F5FE-175C-18C7-37DB7812F575',
-      tapd_corpid:'21152891',
-      qywx:{
-        token: 'Vp3GUbwoHW',
-        encodingAESKey: 'rYz0tZI5jRgCEc42stuz43zTMCu6rsXeMniOJ9QUazl',
-        agentid: '1000005',
-        secret:'DMOtOr_ma4emMNC76ugJojo18wDM0Ngu-AGOtL276IQ',
-        corpid: 'ww7ca3270e7ae04496'
-      }
   };
 
   return {
