@@ -1,0 +1,2874 @@
+[
+  {
+    "id": "EXAMPLE-Factorial",
+    "name": "EXAMPLE-Factorial",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "采用递归函数，计算阶乘",
+    "source": [
+      "def fact(x):",
+      "    if x == 1:",
+      "        return 1",
+      "    else:",
+      "        return x * fact(x-1)",
+      "mynum = fact(n)",
+      "print(mynum)"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "x == 1",
+        "row": 2,
+        "column1": 7,
+        "column2": 13,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "x-1",
+        "row": 5,
+        "column1": 24,
+        "column2": 27,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "fact(x-1)",
+        "row": 5,
+        "column1": 19,
+        "column2": 28,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "x * fact(x-1)",
+        "row": 5,
+        "column1": 15,
+        "column2": 28,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "x",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "mynum",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n = 3"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n = 5"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n = 10"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-PerfectNumber",
+    "name": "EXAMPLE-PerfectNumber",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "某自然数除它本身之外的所有因子之和等于该数，则该数被称为完数。请输出1000以内的完数。",
+    "source": [
+      "for i in range(2,N + 1):",
+      "    s = i",
+      "    for j in range(1,i):",
+      "        if i%j == 0:",
+      "            s -= j",
+      "    if s == 0:",
+      "        print(i)"
+    ],
+    "first": 4,
+    "blanks": [
+      {
+        "id": "i%j == 0",
+        "row": 4,
+        "column1": 11,
+        "column2": 19,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "s -= j",
+        "row": 5,
+        "column1": 12,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "s == 0",
+        "row": 6,
+        "column1": 7,
+        "column2": 13,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "j",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "s",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "N = 1000"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-QuickSort",
+    "name": "EXAMPLE-QuickSort",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "快速排序算法",
+    "source": [
+      "def quicksort(myarray):",
+      "     if len(myarray) < 2:",
+      "          return myarray",
+      "     else:",
+      "          pivot = myarray[0]",
+      "          less = [i for i in myarray[1:] if i <= pivot]",
+      "          greater = [i for i in myarray[1:] if i > pivot]",
+      "          return quicksort(less) + [pivot] + quicksort(greater)",
+      "sortedarray = quicksort(myarray)",
+      "print(sortedarray)"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "myarray[0]",
+        "row": 5,
+        "column1": 18,
+        "column2": 28,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "i <= pivot",
+        "row": 6,
+        "column1": 44,
+        "column2": 54,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "i > pivot",
+        "row": 7,
+        "column1": 47,
+        "column2": 56,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "myarray",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "pivot",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "less",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "greater",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "sortedarray",
+        "type": "LIST",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "myarray = [9, 5, 2, 3]"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "myarray = [3, 5, 7, 2, 4]"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-PrimeRemove",
+    "name": "EXAMPLE-PrimeRemove",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "编写程序，实现将列表 中的素数去除，并输出去除素数后列表 ls 的元素个数。",
+    "source": [
+      "def is_prime(n):",
+      "    for i in range(2,n):",
+      "        if n % i == 0:",
+      "            return False",
+      "    return True",
+      "for i in ls.copy():",
+      "    if is_prime(i) == True:",
+      "        ls.remove(i)",
+      "print(len(ls))"
+    ],
+    "first": 3,
+    "blanks": [
+      {
+        "id": "n % i == 0",
+        "row": 3,
+        "column1": 11,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "is_prime(i) == True",
+        "row": 7,
+        "column1": 7,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "ls",
+        "type": "LIST",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "ls = [23,45,78,87,11,67,89,13,243,56,67,311,431,111,141]"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-ConcatList",
+    "name": "EXAMPLE-ConcatList",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "请使用逗号连接字符串。并将连接得到的字符串打印出来。",
+    "source": [
+      "newlist = ','.join(mylist)",
+      "print(newlist)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "','.join",
+        "row": 1,
+        "column1": 10,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "mylist = [\"man\", \"woman\", \"girl\", \"boy\", \"sister\"]"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "mylist = ['Brazil', 'Russia', 'India', 'China']"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-IntegerSum",
+    "name": "EXAMPLE-IntegerSum",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "整数序列求和。对于一个正整数n，计算从1到n（包含1和n）相加之后的结果。",
+    "source": [
+      "mysum = 0",
+      "for i in range(n+1):",
+      "    mysum = mysum + i",
+      "print(\"1到n求和结果: \", mysum)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for i in range(n+1)",
+        "row": 2,
+        "column1": 0,
+        "column2": 19,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "range(n+1)",
+        "row": 2,
+        "column1": 9,
+        "column2": 19,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "n+1",
+        "row": 2,
+        "column1": 15,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "mysum",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n = 5"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n = 10"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n = 20"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-RandomSort",
+    "name": "EXAMPLE-RandomSort",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "生成100个0到1000之间的随机整数，找出其中被7除余5的所有数的列表S，并降序排列。然后采用元组（排名，数字）的方式给出该数在列表S中的排名。要求：随机生成的结果如果有重复的，请去重。",
+    "source": [
+      "import random",
+      "ranint = list(random.randint(0, 1000) for i in range(100))",
+      "ranint = set(ranint)",
+      "ranint = list(ranint)",
+      "mylist = []",
+      "for p in ranint:",
+      "    if p%7 == 5:",
+      "        mylist.append(p)",
+      "mylist = sorted(mylist, reverse=True)",
+      "for i in range(len(mylist)):",
+      "    mylist[i] = (i + 1, mylist[i])",
+      "print(mylist)"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "random.randint(0, 1000) for i in range(100)",
+        "row": 2,
+        "column1": 14,
+        "column2": 57,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "for i in range(100)",
+        "row": 2,
+        "column1": 38,
+        "column2": 57,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "range(100)",
+        "row": 2,
+        "column1": 47,
+        "column2": 57,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "p%7 == 5",
+        "row": 7,
+        "column1": 7,
+        "column2": 15,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "range(len(mylist))",
+        "row": 10,
+        "column1": 9,
+        "column2": 27,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "len(mylist)",
+        "row": 10,
+        "column1": 15,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "ranint",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "p",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "mylist",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": true,
+        "dimension": [
+          "mylist"
+        ]
+      }
+    ],
+    "ios": []
+  },
+  {
+    "id": "EXAMPLE-GreatCommonDivisor",
+    "name": "EXAMPLE-GreatCommonDivisor",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "编写程序，获得用户输入的数值 M 和 N，求 M 和 N 的最大公约数。",
+    "source": [
+      "def GreatCommonDivisor(a,b):",
+      "    if a > b:",
+      "        a,b = b,a",
+      "    r = 1",
+      "    while r != 0:",
+      "        r = a % b",
+      "        a = b",
+      "        b = r",
+      "    return a",
+      "print(GreatCommonDivisor(m,n))"
+    ],
+    "first": 3,
+    "blanks": [
+      {
+        "id": " b,a ",
+        "row": 3,
+        "column1": 13,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": " r != 0 ",
+        "row": 5,
+        "column1": 36,
+        "column2": 44,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": " r = a % b  ",
+        "row": 6,
+        "column1": 7,
+        "column2": 19,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": " a   ",
+        "row": 9,
+        "column1": 10,
+        "column2": 15,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "m",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "m, n = 5,11"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "m, n = 8,11"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "m, n = 8,12"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-SentimentalReplace",
+    "name": "EXAMPLE-SentimentalReplace",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "将文本中的含有'非法', '暴力', '色情'的文本用***来替换，打印替换后的结果。",
+    "source": [
+      "for word in words:",
+      "     if word in text:",
+      "         text = text.replace(word, '***')",
+      "print(text)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for word in words",
+        "row": 1,
+        "column1": 0,
+        "column2": 17,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "word",
+        "row": 1,
+        "column1": 4,
+        "column2": 8,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": " text.replace(word, '***')",
+        "row": 3,
+        "column1": 15,
+        "column2": 41,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "word",
+        "row": 3,
+        "column1": 29,
+        "column2": 33,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "words",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "text",
+        "type": "STRING",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "words = ['非法', '暴力', '色情']",
+          "text = '这句话里含有暴力和色情内容'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-UniversityList",
+    "name": "EXAMPLE-UniversityList",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "列表 ls 中存储了我国 39 所 985 高校所对应的学校类型，请以这个列表为数据变量，完善 Python 代码，统计输出各类型的数量。",
+    "source": [
+      "ls = [\"综合\", \"理工\", \"综合\", \"综合\", \"综合\", \"综合\", \"综合\", \"综合\", \"综合\", \"综合\",\\",
+      "      \"师范\", \"理工\", \"综合\", \"理工\", \"综合\", \"综合\", \"综合\", \"综合\", \"综合\",\"理工\",\\",
+      "      \"理工\", \"理工\", \"理工\", \"师范\", \"综合\", \"农林\", \"理工\", \"综合\", \"理工\", \"理工\", \\",
+      "      \"理工\", \"综合\", \"理工\", \"综合\", \"综合\", \"理工\", \"农林\", \"民族\", \"军事\"]",
+      "d = {}",
+      "for word in ls:",
+      "    d[word] = d.get(word, 0) + 1",
+      "for k in d:",
+      "    print(\"{}:{}\".format(k, d[k]))"
+    ],
+    "first": 6,
+    "blanks": [
+      {
+        "id": "word in ls",
+        "row": 6,
+        "column1": 4,
+        "column2": 14,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "d[word]",
+        "row": 7,
+        "column1": 4,
+        "column2": 11,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "d[word] = d.get(word, 0) + 1",
+        "row": 7,
+        "column1": 4,
+        "column2": 32,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "ls",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "word",
+        "type": "STRING",
+        "is_index": false
+      },
+      {
+        "name": "d",
+        "type": "DICTIONARY",
+        "is_index": false
+      },
+      {
+        "name": "k",
+        "type": "STRING",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-RecursionAge",
+    "name": "EXAMPLE-RecursionAge",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "有5个人坐在一起，问第五个人多少岁？他说比第4个人大2岁。问第4个人岁数，他说比第3个人大2岁。问第三个人，又说比第2人大两岁。问第2个人，说比第一个人大两岁。最后问第一个人，他说是10岁。请问第五个人多大？",
+    "source": [
+      "def age(n):",
+      "    if n == 1:",
+      "        c = 10",
+      "    else:",
+      "        c = age(n - 1) + 2",
+      "    return c",
+      "print(age(5))"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "c = 10",
+        "row": 3,
+        "column1": 8,
+        "column2": 14,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "age(n - 1) + 2",
+        "row": 5,
+        "column1": 12,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "c",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-LeapYear",
+    "name": "EXAMPLE-LeapYear",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "闰年的判定：地球绕太阳运行周期为365天5小时48分46秒（合365.24219天）即一回归年（tropical year）。公历的平年只有365日，比回归年短约0.2422 日，所余下的时间约为每四年累计一天，故第四年于2月末加1天，使当年的历年长度为366日，这一年就为闰年。现行公历中每400年有97个闰年。按照每四年一个闰年计算，平均每年就要多算出0.0078天，这样经过四百年就会多算出大约3天来。因此每四百年中要减少三个闰年。所以公历规定：年份是整百数时，必须是400的倍数才是闰年；不是400的倍数的世纪年，即使是4的倍数也不是闰年。这就是通常所说的：四年一闰，百年不闰，四百年再闰。 例如，2000年是闰年，2100年则是平年。",
+    "source": [
+      "if (year%4==0 and year%100!=0) or (year%400==0):",
+      "    print(year, 'is a leap year')",
+      "else:",
+      "    print(year, 'is NOT a leap year')"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "year%4==0",
+        "row": 1,
+        "column1": 4,
+        "column2": 13,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "year%100!=0",
+        "row": 1,
+        "column1": 18,
+        "column2": 29,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "(year%400==0)",
+        "row": 1,
+        "column1": 34,
+        "column2": 47,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "(year%4==0 and year%100!=0)",
+        "row": 1,
+        "column1": 3,
+        "column2": 30,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "(year%4==0 and year%100!=0) or (year%400==0)",
+        "row": 1,
+        "column1": 3,
+        "column2": 47,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "year",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2019"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2018"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2017"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2016"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2015"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2014"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2013"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2012"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2011"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "year = 2010"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-PrintSeq",
+    "name": "EXAMPLE-PrintSeq",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "给定一个字符串的列表。请每一行打印一个字符串。",
+    "source": [
+      "for i in s:",
+      "    print(i)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for i in s",
+        "row": 1,
+        "column1": 0,
+        "column2": 10,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "i",
+        "type": "STRING",
+        "is_index": false
+      },
+      {
+        "name": "s",
+        "type": "STRING",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "s = [\"man\",\"woman\",\"girl\",\"boy\",\"sister\"]"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-YangHuiTriangle",
+    "name": "EXAMPLE-YangHuiTriangle",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "给定一个非负索引 k,其中 k≤ 33,返回杨辉三角的第 k 行。 在杨辉三角中,每个数是它左上方和右上方的数的和。",
+    "source": [
+      "def yanghui(t):",
+      "    print([1])",
+      "    line = [1, 1]",
+      "    print(line)",
+      "    for i in range(2, t):",
+      "        r = []",
+      "        for j in range(0, len(line)-1):",
+      "            r.append(line[j]+line[j+1])",
+      "        line = [1]+r+[1]",
+      "        print(line)",
+      "yanghui(n)"
+    ],
+    "first": 3,
+    "blanks": [
+      {
+        "id": "[1, 1]",
+        "row": 3,
+        "column1": 11,
+        "column2": 17,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "for i in range(1, 101)",
+        "row": 8,
+        "column1": 56,
+        "column2": 78,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "t",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "r",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "line",
+        "type": "LIST",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n = 6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-Compare",
+    "name": "EXAMPLE-Compare",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "比较大小，输出两个数中比较大的那个",
+    "source": [
+      "if x>y:",
+      "    print('x,y两个中值较大的：',x)",
+      "else:",
+      "    print('x,y两个中值较大的：',y)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "x>y",
+        "row": 1,
+        "column1": 3,
+        "column2": 6,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "x",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "y",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "x, y = 3, 5"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "x, y = 13, 5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-TempStr",
+    "name": "EXAMPLE-TempStr",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "要求：编写程序进行摄氏度和华氏度之间的转换（小数点后2位）。温度转化公式\"C=(F−32)/1.8\"，\"F=C\"×\"1.8+32\"，这里C表示摄氏温度，F表示华氏温度。错误输入格式，提示出错。",
+    "source": [
+      "if TempStr[-1] in ['F','f']:",
+      "    C = (eval(TempStr[:-1]) - 32)/1.8",
+      "    print(\"转换后的温度是{:.2f}C\".format(C))",
+      "elif TempStr[-1] in ['C','c']:",
+      "    F = 1.8*eval(TempStr[:-1]) + 32",
+      "    print(\"转换后的温度是{:.2f}F\".format(F))",
+      "else:",
+      "    print(\"输入格式错误\")"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "if TempStr[-1] in",
+        "row": 1,
+        "column1": 0,
+        "column2": 17,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "1.8*eval(TempStr[:-1]) + 32",
+        "row": 5,
+        "column1": 8,
+        "column2": 35,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "TempStr",
+        "type": "STRING",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "TempStr = '32F'"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "TempStr = '32f'"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "TempStr = '32C'"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "TempStr = '32c'"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "TempStr = '32'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-Dividion",
+    "name": "EXAMPLE-Dividion",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "输出1~100之间能被7整除但不能同时被5整除的所有整数。",
+    "source": [
+      "for i in range(1, 101):",
+      "    if i%7==0 and i%5!=0:",
+      "        print(i)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for i in range(1, 101)",
+        "row": 1,
+        "column1": 0,
+        "column2": 22,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "i%7==0",
+        "row": 2,
+        "column1": 7,
+        "column2": 13,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "i%5!=0",
+        "row": 2,
+        "column1": 18,
+        "column2": 24,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-One-Nth-Addition",
+    "name": "EXAMPLE-One-Nth-Addition",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "输入一个自然数n，如果n为奇数，输出表达式1+1/3+.....+1/n的值；如果n为偶数,输出表达式1/2+1/4+....+1/n的值；输出表达式结果保留2位小数。",
+    "source": [
+      "def f(n):",
+      "    sum = 0.0",
+      "    if n%2 == 1:",
+      "        for i in range(1, n+1, 2):",
+      "            sum += 1/i",
+      "    else:",
+      "        for i in range(2, n+1, 2):",
+      "            sum += 1/i",
+      "    return sum",
+      "print(\"{:.2f}\".format(f(n)))"
+    ],
+    "first": 3,
+    "blanks": [
+      {
+        "id": "n%2 == 1",
+        "row": 3,
+        "column1": 7,
+        "column2": 15,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "range(1, n+1, 2)",
+        "row": 4,
+        "column1": 17,
+        "column2": 33,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "sum += 1/i ",
+        "row": 5,
+        "column1": 12,
+        "column2": 23,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n = 5"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n = 4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-SeqUnpack",
+    "name": "EXAMPLE-SeqUnpack",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "使用序列解包遍历字典元素。",
+    "source": [
+      "for k, v in s.items():",
+      "    print(k, v)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "k, v in s.items()",
+        "row": 1,
+        "column1": 4,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "s.items()",
+        "row": 1,
+        "column1": 12,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "s",
+        "type": "DICTIONARY",
+        "is_index": false
+      },
+      {
+        "name": "k",
+        "type": "STRING",
+        "is_index": false
+      },
+      {
+        "name": "v",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "s = {'a':1, 'b':2, 'c':3}"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-Palindrome",
+    "name": "EXAMPLE-Palindrome",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "一个5位数，判断它是不是回文数。即12321是回文数，个位与万位相同，十位与千位相同。",
+    "source": [
+      "x = str(a)",
+      "flag = True",
+      "for i in range(int(len(x)/2)):",
+      "    if x[i] != x[-i - 1]:",
+      "        flag = False",
+      "        break",
+      "if flag:",
+      "    print( \"%d 是一个回文数!\"%a)",
+      "else:",
+      "    print ( \"%d 不是一个回文数!\"%a)"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "False",
+        "row": 5,
+        "column1": 15,
+        "column2": 20,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "flag",
+        "row": 7,
+        "column1": 3,
+        "column2": 7,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "a",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "flag",
+        "type": "BOOLEAN",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "a = 12321"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "a = 13421"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-CharDelete",
+    "name": "EXAMPLE-CharDelete",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "输入一个包含字母和数字的字符串，剔除其中的字母，只保留数字，输出显示在屏幕上。",
+    "source": [
+      "for x in w:",
+      "    if '0'<= x <= '9':",
+      "        continue",
+      "    else:",
+      "        w = w.replace(x,'')",
+      "print(w)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for x in w:",
+        "row": 1,
+        "column1": 0,
+        "column2": 11,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "continue",
+        "row": 3,
+        "column1": 8,
+        "column2": 16,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "x",
+        "type": "STRING",
+        "is_index": false
+      },
+      {
+        "name": "w",
+        "type": "STRING",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "w =  \"fds324sd\""
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "w =  \"des653ss\""
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-MatrixTotal",
+    "name": "EXAMPLE-MatrixTotal",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "补充完善如下代码，使得程序能够计算 a 中各元素与 b 逐项乘积的累加和。‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬提示代码如下：",
+    "source": [
+      "a = [[1,2,3], [4,5,6], [7,8,9]]",
+      "b = [3,6,9]",
+      "s = 0",
+      "for c in a:",
+      "    for j in range(3):",
+      "        s += c[j]*b[j]",
+      "print(s)"
+    ],
+    "first": 4,
+    "blanks": [
+      {
+        "id": "a",
+        "row": 4,
+        "column1": 9,
+        "column2": 10,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "c[j]*b[j]",
+        "row": 6,
+        "column1": 13,
+        "column2": 22,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "a",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "b",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "s",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-CompareNumber",
+    "name": "EXAMPLE-CompareNumber",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "请打印出\"Hello Python\"。",
+    "source": [
+      "if x<y:",
+      "    print('两个元素中较大的那个是：',y)",
+      "elif y<x:",
+      "    print('两个元素中较大的那个是：',x)",
+      "else:",
+      "    print('两个元素一样大。')"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "x<y",
+        "row": 1,
+        "column1": 3,
+        "column2": 6,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "x",
+        "row": 4,
+        "column1": 25,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "x,y = 1,3"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "x,y = 3,1"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "x,y = 2,2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-scoreRank",
+    "name": "EXAMPLE-scoreRank",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "对于一个输入的成绩，给出相应的等级：90-100：A,80-89：B,70-79：C,60-69：D,0-59:E ",
+    "source": [
+      "degree = 'DCBAAE'",
+      "if score > 100 or score < 0:",
+      "        print ('wrong score.must between 0 and 100.')",
+      "else:",
+      "        index = (score - 60)//10",
+      "        if index >= 0:",
+      "                print (degree[index])",
+      "        else:",
+      "                print (degree[-1])"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "score > 100 or score < 0",
+        "row": 2,
+        "column1": 3,
+        "column2": 27,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "score > 100",
+        "row": 2,
+        "column1": 3,
+        "column2": 14,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "score < 0",
+        "row": 2,
+        "column1": 18,
+        "column2": 27,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "(score - 60)//10",
+        "row": 5,
+        "column1": 16,
+        "column2": 32,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "index >= 0",
+        "row": 6,
+        "column1": 11,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "degree[-1]",
+        "row": 9,
+        "column1": 23,
+        "column2": 33,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "score",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "index",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "score = 85"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "score = 75"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "score = 55"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-RandCount",
+    "name": "EXAMPLE-RandCount",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "随机生成50个介于[1,20]之间的整数，然后统计每个整数出现频率。",
+    "source": [
+      "import random",
+      "x = [random.randint(1,20) for i in range(50)]",
+      "r = dict()",
+      "for i in x:",
+      "    r[i] = r.get(i, 0)+1",
+      "for k, v in r.items():",
+      "    print(k, v)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "random.randint(1,20)",
+        "row": 2,
+        "column1": 5,
+        "column2": 25,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "get(i, 0)",
+        "row": 5,
+        "column1": 13,
+        "column2": 22,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "r.items()",
+        "row": 6,
+        "column1": 12,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "r",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-NoSameNum",
+    "name": "EXAMPLE-NoSameNum",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "有四个数字：1、2、3、4，能组成多少个互不相同且无重复数字的三位数？各是多少？",
+    "source": [
+      "for i in range(1,5):",
+      "    for j in range(1,5):",
+      "        for k in range(1,5):",
+      "            if (i != k) and (i != j) and (j != k):",
+      "                print(i,j,k)"
+    ],
+    "first": 4,
+    "blanks": [
+      {
+        "id": "(i != k) and (i != j) and (j != k)",
+        "row": 4,
+        "column1": 15,
+        "column2": 49,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "j",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "k",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-narcissusnumber",
+    "name": "EXAMPLE-narcissusnumber",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "打印出所有的\"水仙花数\"，所谓\"水仙花数\"是指一个三位数，其各位数字立方和等于该数本身。例如：153是一个\"水仙花数\"，因为153=1的三次方＋5的三次方＋3的三次方。 ",
+    "source": [
+      "for n in range(100,1000):",
+      "    i = n / 100",
+      "    j = n / 10 % 10",
+      "    k = n % 10",
+      "    if n == i ** 3 + j ** 3 + k ** 3:",
+      "        print(n)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "range(100,1000)",
+        "row": 1,
+        "column1": 9,
+        "column2": 24,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": " n / 10 % 10 ",
+        "row": 3,
+        "column1": 7,
+        "column2": 20,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "i ** 3 + j ** 3 + k ** 3",
+        "row": 5,
+        "column1": 12,
+        "column2": 36,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "j",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "k",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-IntegerFactorSum",
+    "name": "EXAMPLE-IntegerFactorSum",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "求1+2!+3!+...+20!的和。",
+    "source": [
+      "mysum = 0",
+      "for i in range(1,n+1):",
+      "    t *= i",
+      "    mysum = mysum + i",
+      "print(\"1到20!求和结果: \", mysum)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for i in range(1,n+1)",
+        "row": 2,
+        "column1": 0,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "range(1,n+1)",
+        "row": 2,
+        "column1": 9,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "n+1",
+        "row": 2,
+        "column1": 17,
+        "column2": 20,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "mysum",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n = 20"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-Zip",
+    "name": "EXAMPLE-Zip",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "同时遍历用户的编号和姓名信息，分别存储在两个不同的列表中。",
+    "source": [
+      "for (a,b) in zip(id,user):",
+      "print(a,b)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "(a,b)",
+        "row": 1,
+        "column1": 4,
+        "column2": 9,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "id,user",
+        "row": 1,
+        "column1": 17,
+        "column2": 24,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "zip(id,user)",
+        "row": 1,
+        "column1": 13,
+        "column2": 25,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "id",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "user",
+        "type": "LIST",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "id=['001','002','003']",
+          "user=['jack','rose','tom']"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-EquationSolver",
+    "name": "EXAMPLE-EquationSolver",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "该程序求解一元二次方程。",
+    "source": [
+      "import math",
+      "def EquationSolver(a,b,c):",
+      "    print('该程序求解一元二次方程')",
+      "    delta=b*b-4*a*c",
+      "    if a==0:",
+      "        x=-b/c",
+      "        print('\\n不是一元二次方程，只有一个解：',x)",
+      "    else:",
+      "        if delta<0:",
+      "            print('\\n该方程没有实根！')",
+      "        else:",
+      "            if delta==0:",
+      "                x=-b/(2*a)",
+      "                print('\\n有一个双根:',x)",
+      "            else:",
+      "                delta=math.sqrt(delta)",
+      "                root1=(-b+delta)/(2*a)",
+      "                root2=(-b-delta)/(2*a)",
+      "                print('\\n一元二次方程的根为:',root1,root2)",
+      "EquationSolver(a,b,c)"
+    ],
+    "first": 5,
+    "blanks": [
+      {
+        "id": "-b/c",
+        "row": 6,
+        "column1": 10,
+        "column2": 14,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "delta<0",
+        "row": 9,
+        "column1": 11,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "-b/(2*a)",
+        "row": 13,
+        "column1": 18,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "(-b-delta)/(2*a)",
+        "row": 18,
+        "column1": 22,
+        "column2": 38,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "a",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "b",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "c",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "a,b,c= 1,2,1"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "a,b,c= 1,1,1"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "a,b,c= 3,4,-5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-GCD-LCM",
+    "name": "EXAMPLE-GCD-LCM",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "计算并输出两个整数的最大公约数（GCD）和最小公倍数（LCM）。",
+    "source": [
+      "x, y = m, n",
+      "r = m % n",
+      "while r != 0:",
+      "    m, n = n, r",
+      "    r = m % n",
+      "print(\"{}和{}的最大公约数：{};最小公倍数：{:.0f}\".format(x, y, n, x*y/n))"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "r != 0",
+        "row": 3,
+        "column1": 6,
+        "column2": 12,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "x*y/n",
+        "row": 6,
+        "column1": 52,
+        "column2": 57,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "x, y, n, x*y/n",
+        "row": 6,
+        "column1": 43,
+        "column2": 57,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "m",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "x",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "y",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "r",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "m, n = 6, 36"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "m, n = 125, 1155"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-Hello Python",
+    "name": "EXAMPLE-Hello Python",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "请打印出\"Hello Python\"。",
+    "source": [
+      "print(\"Hello Python\")"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "print(\"Hello Python\")",
+        "row": 1,
+        "column1": 0,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-rectArea",
+    "name": "EXAMPLE-rectArea",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "计算一个长方形的面积 ",
+    "source": [
+      "def rectArea(length, width):",
+      "    area =  length * width",
+      "    return area",
+      "rectArea(len, wid)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": " rectArea(length, width): ",
+        "row": 1,
+        "column1": 3,
+        "column2": 29,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "area =  length * width",
+        "row": 2,
+        "column1": 4,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "len",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "wid",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "area",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "len, wid = 5, 4"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "len, wid = 6.5, 4.8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-Fibonacci",
+    "name": "EXAMPLE-Fibonacci",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "计算并输出长度为n（n>=3）的Fibonacci数列。斐波那契数列，又称黄金分割数列、因数学家列昂纳多·斐波那契（Leonardoda Fibonacci）以兔子繁殖为例子而引入，故又称为“兔子数列”，指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波纳契数列以如下被以递推的方法定义：F(1)=1，F(2)=1, F(n)=F(n-1)+F(n-2)（n>=3）",
+    "source": [
+      "def fib(n):",
+      "     a, b = 1, 1",
+      "     i = 0",
+      "     while (i < n):",
+      "          print(a, end=' ')",
+      "          a, b = b, a + b",
+      "          i = i + 1"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "i < n",
+        "row": 4,
+        "column1": 12,
+        "column2": 17,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "b, a + b",
+        "row": 6,
+        "column1": 17,
+        "column2": 25,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "a + b",
+        "row": 6,
+        "column1": 20,
+        "column2": 25,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "a",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "b",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n = 3"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n = 10"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-RandomNumber",
+    "name": "EXAMPLE-RandomNumber",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "以 123 为随机数种子，随机生成 10 个在 1 到 999（含）之间的随机数，以逗号分隔，打印输出，请补充横线处代码。提示代码如下:",
+    "source": [
+      "import random",
+      "random.seed(123)",
+      "for i in range(10):",
+      "    print(random.randint(1,999), end=\",\")"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "random",
+        "row": 1,
+        "column1": 7,
+        "column2": 13,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "for i in range(10)",
+        "row": 3,
+        "column1": 0,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "random.randint(1,999)",
+        "row": 4,
+        "column1": 10,
+        "column2": 31,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "i",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-AVGScore",
+    "name": "EXAMPLE-AVGScore",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "",
+    "source": [
+      "fi = open(\"data.txt\", 'r')",
+      "for l in fi:",
+      "    l = l.split(',')",
+      "    s = 0.0",
+      "    n = len(l)",
+      "    for cours in l:",
+      "        items  = cours.split(':')",
+      "        s += eval(items[1])",
+      "    print(\"总和是：{}，平均值是：{:.2f}\".format(s,s/n))",
+      "fi.close()"
+    ],
+    "first": 3,
+    "blanks": [
+      {
+        "id": "l.split(',')",
+        "row": 3,
+        "column1": 8,
+        "column2": 20,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "cours.split(':')",
+        "row": 7,
+        "column1": 17,
+        "column2": 33,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "items[1]",
+        "row": 8,
+        "column1": 18,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "eval(items[1])",
+        "row": 8,
+        "column1": 13,
+        "column2": 27,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "s += eval(items[1])",
+        "row": 8,
+        "column1": 8,
+        "column2": 27,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-circleArea",
+    "name": "EXAMPLE-circleArea",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "计算一个圆形的面积",
+    "source": [
+      "def circleArea(radius):",
+      "    pi = 3.1415",
+      "    area = pi * radius * radius",
+      "    return area",
+      "circleArea(radius)"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "pi * radius * radius",
+        "row": 3,
+        "column1": 11,
+        "column2": 31,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "area",
+        "row": 4,
+        "column1": 11,
+        "column2": 15,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "area",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "radius",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "radius = 1"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "radius = 2.0"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "radius = 100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-BinarySearch",
+    "name": "EXAMPLE-BinarySearch",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "二分搜索是一种在有序数组中查找某一特定元素的搜索算法。搜索过程从数组的中间元素开始，如果中间元素正好是要查找的元素，则搜索过程结束；如果某一特定元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半中查找，而且跟开始一样从中间元素开始比较。如果在某一步骤数组为空，则代表找不到。这种搜索算法每一次比较都使搜索范围缩小一半。",
+    "source": [
+      "def binary_search(mylist, myitem):",
+      "    low = 0",
+      "    high = len(mylist) - 1",
+      "    while low <= high:",
+      "        mid = round((low + high) / 2)",
+      "        print(\"Seeking @ \", mid)",
+      "        guess = mylist[mid]",
+      "        if guess == myitem:",
+      "            print(\"Found @ \", mid)",
+      "            return mid",
+      "        if guess > myitem:",
+      "            high = mid - 1",
+      "        else:",
+      "            low = mid + 1",
+      "    print(\"Failure\")",
+      "    return None",
+      "binary_search(mylist, myitem)"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "len(mylist) - 1",
+        "row": 3,
+        "column1": 11,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "high",
+        "row": 3,
+        "column1": 4,
+        "column2": 8,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "low <= high",
+        "row": 4,
+        "column1": 10,
+        "column2": 21,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "(low + high) / 2",
+        "row": 5,
+        "column1": 20,
+        "column2": 36,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "mid - 1",
+        "row": 12,
+        "column1": 19,
+        "column2": 26,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "mid + 1",
+        "row": 14,
+        "column1": 18,
+        "column2": 25,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "myitem",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "mylist",
+        "type": "LIST",
+        "is_index": false
+      },
+      {
+        "name": "low",
+        "type": "NUMBER",
+        "is_index": true,
+        "dimension": [
+          "mylist"
+        ]
+      },
+      {
+        "name": "high",
+        "type": "NUMBER",
+        "is_index": true,
+        "dimension": [
+          "mylist"
+        ]
+      },
+      {
+        "name": "mid",
+        "type": "NUMBER",
+        "is_index": true,
+        "dimension": [
+          "mylist"
+        ]
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "mylist = [1,2,3,4,5,6,7]",
+          "myitem = 5"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "mylist = [1,4,7,8,9,10,11]",
+          "myitem = 3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-NumberSwap",
+    "name": "EXAMPLE-NumberSwap",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "请交换两个元素的值",
+    "source": [
+      "print('交换前：x,y的值(x,y):%d,%d'%(x,y))",
+      "x,y = y,x",
+      "print('交换前：x,y的值(x,y):%d,%d'%(x,y))"
+    ],
+    "first": 2,
+    "blanks": [
+      {
+        "id": "y,x",
+        "row": 2,
+        "column1": 6,
+        "column2": 9,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "x",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "y",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "x,y = 1,3"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "x,y = 2,5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-StringAddition",
+    "name": "EXAMPLE-StringAddition",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "编程去除两个字符串中重复出现的字符，并把第一个字符串剩余的字符追加到第二个字符串中，保持原有顺序，显示在屏幕上。",
+    "source": [
+      "for a in sa:",
+      "    if a not in sb:",
+      "        sb += a",
+      "print(sb)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "for a in sa",
+        "row": 1,
+        "column1": 0,
+        "column2": 11,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "not in",
+        "row": 2,
+        "column1": 9,
+        "column2": 15,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "if a not in sb",
+        "row": 2,
+        "column1": 4,
+        "column2": 18,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "a",
+        "type": "STRING",
+        "is_index": false
+      },
+      {
+        "name": "sa",
+        "type": "STRING",
+        "is_index": false
+      },
+      {
+        "name": "sb",
+        "type": "STRING",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "sa, sb = 'asdfghjkl', 'abcdefghijk'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXAMPLE-countX_n",
+    "name": "EXAMPLE-countX_n",
+    "version": "1.0",
+    "category": "填空题",
+    "type": 0,
+    "body": "循环结构计算 S = 1 + x + x^2/2! + ... +x^n/(n+1)!的和（显示小数点后6位）",
+    "source": [
+      "s = 1 + x",
+      "i = 1",
+      "a = 1",
+      "while i <= n:",
+      "    a = a*x/(i+1)",
+      "    s = s + a",
+      "    i = i + 1",
+      "print('s=%.6f'%s)"
+    ],
+    "first": 1,
+    "blanks": [
+      {
+        "id": "i <= n",
+        "row": 4,
+        "column1": 6,
+        "column2": 12,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "a*x/(i+1)",
+        "row": 5,
+        "column1": 8,
+        "column2": 17,
+        "difficult": 1,
+        "suggestion": ""
+      },
+      {
+        "id": "i + 1",
+        "row": 7,
+        "column1": 8,
+        "column2": 13,
+        "difficult": 1,
+        "suggestion": ""
+      }
+    ],
+    "variables": [
+      {
+        "name": "n",
+        "type": "NUMBER",
+        "is_index": false
+      },
+      {
+        "name": "x",
+        "type": "NUMBER",
+        "is_index": false
+      }
+    ],
+    "ios": [
+      {
+        "id": "none",
+        "inputs": [
+          "n,x = 1,1"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n,x = 1,2"
+        ]
+      },
+      {
+        "id": "none",
+        "inputs": [
+          "n,x = 2,10"
+        ]
+      }
+    ]
+  }
+]
